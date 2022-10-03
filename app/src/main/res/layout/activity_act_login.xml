@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ilcabana.atp.despachocombustible.ActLogin">
+
+    <TextView
+        android:id="@+id/tv_desc_activo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Despacho combustible"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/tv_desc_activo"
+        android:layout_alignLeft="@+id/tv_desc_activo"
+        android:layout_alignStart="@+id/tv_desc_activo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Contraseña: "
+        android:layout_below="@+id/txtuser"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/txtuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3">
+        <requestFocus />
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/txtpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/txtuser"
+        android:ems="15"
+        android:password="true"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/LetraBlanco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/boton_gris"
+        android:textColor="#FFFFFF"
+        android:text="Entrar"
+        android:onClick="btnLogin"
+        android:layout_below="@+id/cb_recordar"
+        android:layout_alignLeft="@+id/cb_recordar"
+        android:layout_alignStart="@+id/cb_recordar" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recordar contraseña"
+        android:id="@+id/cb_recordar"
+        android:checked="false"
+        android:layout_below="@+id/txtpass"
+        android:layout_alignLeft="@+id/txtpass"
+        android:layout_alignStart="@+id/txtpass" />
+
+</RelativeLayout>

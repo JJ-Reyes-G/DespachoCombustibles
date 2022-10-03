@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/tv_row_empnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2014-2015"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0033FF"
+
+        android:layout_alignTop="@+id/btn_check_estatus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tv_row_rango_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_row_empnombre"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="01/01/2015 - 15/01/2015" />
+
+    <Button
+        android:id="@+id/btn_check_estatus"
+        style="?android:attr/buttonStyleSmall"
+        android:background="@drawable/boton_gris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:freezesText="false"
+        android:text="+ Dia"
+        android:textColor="#fff"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tv_row_QuinId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quincena: 155"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/btn_check_estatus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_candado_quin"
+        android:src="@drawable/open"
+        android:layout_below="@+id/tv_fechasta_quin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/tv_fecdesde_quin"
+        android:layout_alignEnd="@+id/tv_fecdesde_quin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="50"
+        android:id="@+id/tv_row_detpendientes_dia"
+        android:layout_alignTop="@+id/img_candado_quin"
+        android:layout_toRightOf="@+id/img_candado_quin"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/img_candado_quin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$ 1500"
+        android:id="@+id/tv_row_totalquincena_pendiente"
+        android:layout_alignTop="@+id/tv_row_detpendientes_dia"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="15-10"
+        android:id="@+id/tv_fecdesde_quin"
+        android:visibility="invisible"
+        android:layout_below="@+id/tv_row_QuinId"
+        android:layout_alignLeft="@+id/tv_row_QuinId"
+        android:layout_alignStart="@+id/tv_row_QuinId" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="15-10-2015"
+        android:id="@+id/tv_fechasta_quin"
+        android:visibility="invisible"
+        android:layout_below="@+id/tv_fecdesde_quin"
+        android:layout_alignLeft="@+id/tv_fecdesde_quin"
+        android:layout_alignStart="@+id/tv_fecdesde_quin" />
+
+    <TextView
+        android:id="@+id/tv_row_totalquincena_guardadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$ 150"
+        android:gravity="right"
+        android:layout_below="@+id/tv_row_totalquincena_pendiente"
+        android:layout_alignRight="@+id/tv_row_totalquincena_pendiente"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$ 1500"
+        android:id="@+id/tv_row_totalquincena"
+        android:layout_below="@+id/tv_row_totalquincena_guardadas"
+        android:layout_alignRight="@+id/tv_row_totalquincena_guardadas"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibtn_consulta_tacos"
+        android:background="@drawable/boton_gris"
+        android:focusable="false"
+        android:freezesText="false"
+        android:text="Consulta"
+        android:textColor="#fff"
+        android:textSize="13dp"
+        android:layout_below="@+id/tv_row_totalquincena"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

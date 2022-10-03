@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/tvr_num_placa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvr_num_envio"
+        android:layout_below="@+id/tvr_num_envio"
+        android:textColor="#2E9AFE"
+        android:text="PLACA: J43S54" />
+
+    <TextView
+        android:id="@+id/tvr_num_envio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="TACO: 45785"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvr_codnom_lote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvr_num_placa"
+        android:layout_below="@+id/tvr_num_placa"
+        android:textColor="#333"
+        android:text="JPAIZ001 JOSE ALEXANDER PAIZ FINCA:  1 - CEIBILLO # 3" />
+
+    <TextView
+        android:id="@+id/tvr_tipo_rastra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rastra Cañera"
+        android:textColor="#2E9AFE"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvr_codtrasport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333"
+        android:text="CODTRASNP"
+        android:layout_below="@+id/tvr_codnom_lote"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Galones: 100"
+        android:id="@+id/tv_galones_asignados"
+        android:layout_alignTop="@+id/tvr_codtrasport"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

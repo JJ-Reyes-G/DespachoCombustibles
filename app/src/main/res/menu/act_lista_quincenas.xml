@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ilcabana.planillaroza.ActListaQuincenas">
+
+    <item
+        android:id="@+id/menu_reiniciar_sistema"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Reiniciar Sistema"/>
+
+
+
+
+</menu>

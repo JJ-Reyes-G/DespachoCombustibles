@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/CtxLstOpcBajarQuincena"
+        android:title="Bajar Todos Los Registros"></item>
+    <!--
+        <item android:id="@+id/CtxLstOpcDeseleccionarEmp"
+            android:title="Imprimir Envio Uñadas"></item>
+
+        <item android:id="@+id/CtxImprimirBrazadas"
+            android:title="Imprimir Envio Brazadas"></item>
+    -->
+    <!--
+    <item android:id="@+id/CtxAddEnvio"
+        android:title="Agregar Número Envio"></item>
+    -->
+    <!--
+    <item android:id="@+id/CtxAddTacoManual"
+        android:title="Agregar Numero de Taco Manual"></item>
+    -->
+    <item android:id="@+id/CtxMeGuardarPlanilla"
+        android:title="Respaldar Planilla"></item>
+
+    <item android:id="@+id/CtxLstOpcActualizarListaEmpleados"
+        android:title="Actualizar Lista de Empleados"></item>
+
+    <item android:id="@+id/CtxLstOpcCancelar"
+        android:title="CANCELAR"></item>
+
+</menu>
