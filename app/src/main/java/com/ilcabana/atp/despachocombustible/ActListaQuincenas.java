@@ -33,7 +33,7 @@ public class ActListaQuincenas extends AppCompatActivity {
 	private ProgressDialog pDialog;
 	String COD_QUINCENA, FECHA_INICIO, FECHA_FIN, fechaInicioQuincena;
 	Preferencias pref;
-
+//una prueba
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

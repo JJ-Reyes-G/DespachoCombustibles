@@ -57,7 +57,7 @@ public class ActListaEnvios extends AppCompatActivity implements SearchView.OnQu
     DatabaseHandler_ dbhelper;
     int tipoLista;
     TableLayout tbl_btn_fecha_hora_quema;
-
+//sdsdjsd
     SimpleAdapter simpleAdaptador;
     private SearchView mSearchView;
     Context ctx = this;
